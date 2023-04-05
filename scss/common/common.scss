@@ -1,0 +1,38 @@
+body {
+  font-family: $default-font;
+  color: $text-color;
+}
+
+.container{
+  // padding: 0px 17%;
+  max-width: 940px;
+  margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'OpenSans-Bold';
+}
+
+blueText{
+  color: $color_primary;
+
+}
+
+.button{
+  @extend %text-uppercase;
+  background-color: $color_primary;
+  color: $text_color-light;
+  border: none;
+  width: 150px;
+  height: 40px;
+  letter-spacing: 0.5px;
+  font-family: 'OpenSans-Regular';
+  font-weight: 500;
+  transition: ease-in 0.5s;
+}
+
+.button:hover{
+  background-color: $color_primary_hover;
+  
+
+}

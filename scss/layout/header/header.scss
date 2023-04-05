@@ -1,0 +1,40 @@
+header{
+    height: 65px;
+    border-bottom: 1px solid $color-additional;
+
+    div{
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        img{
+            height: 18px;
+        }
+        nav{
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 40px;
+                li{
+                    
+                    
+                    a{
+                        text-decoration: none;
+                        @extend %text-uppercase;
+                        color: $text_color;
+                        font-weight: bold;
+                        letter-spacing: 1.09091px;
+                        // font-family: 'OpenSans';
+                        font-size: 14px;
+                    }
+                    a:hover{
+                        color: $color_primary;
+                    }
+                }
+            }
+        }
+    }
+    
+}

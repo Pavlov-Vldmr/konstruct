@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "bebasneuebold";
+  src: url("/assets/fonts/bebasneuebold.woff2");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("/assets/fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("/assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("/assets/fonts/OpenSans-ExtraBold.ttf");
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.capabilities .cards .item h3, .capabilities .text h3, .story aside .photos div span, .story h3, header div nav ul li a, .button {
+  text-transform: uppercase;
+}
+
+.top, .get-in-touch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "OpenSans-Regular";
+  color: #48555B;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "OpenSans-Bold";
+}
+
+blueText {
+  color: #00A4E5;
+}
+
+.button {
+  background-color: #00A4E5;
+  color: #FFFFFF;
+  border: none;
+  width: 150px;
+  height: 40px;
+  letter-spacing: 0.5px;
+  font-family: "OpenSans-Regular";
+  font-weight: 500;
+  transition: ease-in 0.5s;
+}
+
+.button:hover {
+  background-color: #1c9acc;
+}
+
+header {
+  height: 65px;
+  border-bottom: 1px solid #E6E6E6;
+}
+header div {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
+header div img {
+  height: 18px;
+}
+header div nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 40px;
+}
+header div nav ul li a {
+  text-decoration: none;
+  color: #48555B;
+  font-weight: bold;
+  letter-spacing: 1.09091px;
+  font-size: 14px;
+}
+header div nav ul li a:hover {
+  color: #00A4E5;
+}
+
+.story {
+  padding-top: 60px;
+}
+.story h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: 2.30625px;
+  color: #48555B;
+}
+.story aside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 60px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.story aside .text {
+  max-width: 405px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.story aside .text h4 {
+  font-weight: 900;
+  color: #48555B;
+  letter-spacing: 0.1875px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.story aside .text p {
+  margin-top: 40px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+}
+.story aside .photos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.story aside .photos div span {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "OpenSans-ExtraBold";
+  font-weight: bolder;
+  position: absolute;
+  margin: 10px;
+  width: 20px;
+}
+.story aside .photos div img {
+  width: 140px;
+}
+
+.capabilities {
+  margin-top: 120px;
+}
+.capabilities .text {
+  display: flex;
+}
+.capabilities .text h3 {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2.30625px;
+  padding-top: 5px;
+  color: #48555B;
+}
+.capabilities .text p {
+  min-width: 500px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+  max-width: 400px;
+}
+.capabilities .cards {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+}
+.capabilities .cards .item {
+  padding: 22px;
+  border: 1px solid #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+}
+.capabilities .cards .item h3 {
+  margin-top: 20px;
+  font-family: "OpenSans-Bold";
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.426667px;
+  color: #48555B;
+}
+.capabilities .cards .item p {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+}
+
+.get-in-touch {
+  gap: 35px;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-image: url(/assets/images/bg-bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.get-in-touch h2 {
+  max-width: 350px;
+}
+
+footer div .newsletter,
+footer div .copyright {
+  background-color: #171819;
+  color: #FFFFFF;
+}
+footer div .newsletter {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100px;
+  display: flex;
+}
+footer div .newsletter h2 {
+  height: 40px;
+  font-size: 22px;
+}
+footer div .newsletter input {
+  margin-left: 30px;
+  height: 38px;
+  width: 250px;
+  border: none;
+}
+footer div .company {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 240px;
+  background-color: #141A20;
+  color: #FFFFFF;
+}
+footer div .copyright {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 60px;
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.top {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.top a {
+  margin-top: 41px;
+}
+.top div h1 {
+  color: #FFFFFF;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 5.70937px;
+  font-family: "bebasneuebold";
+}
+.top div span {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+}
+.top span {
+  color: #FFFFFF;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 3.7px;
+  padding-bottom: 71px;
+}
+
+/*# sourceMappingURL=index.css.map */

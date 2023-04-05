@@ -1,0 +1,59 @@
+footer {
+    div {
+
+        .newsletter,
+        .copyright {
+            background-color: $bg-color-dark;
+            color: $text_color-light;
+
+        }
+
+        .newsletter {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            height: 100px;
+            display: flex;
+
+            h2 {
+                height: 40px;
+                font-size: 22px;
+            }
+
+            input {
+                margin-left: 30px;
+
+                height: 38px;
+                width: 250px;
+                border: none;
+            }
+        }
+
+
+
+        .company {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            height: 240px;
+            background-color: $bg-color-dark-blue;
+            color: $text_color-light;
+
+        }
+
+        .copyright {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            height: 60px;
+            font-size: 11px;
+            font-weight: 100;
+        }
+    }
+}
