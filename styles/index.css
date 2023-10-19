@@ -380,7 +380,7 @@ header div nav div.burger a span {
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background-image: url(/assets/images/bg-bottom.png);
+  background-image: url(./../assets/images/bg-bottom.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
