@@ -1,40 +1,83 @@
-header{
-    height: 65px;
-    border-bottom: 1px solid $color-additional;
+header {
+  height: 65px;
+  border-bottom: 1px solid $color-additional;
 
-    div{
-        height: inherit;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        vertical-align: middle;
-        img{
-            height: 18px;
-        }
-        nav{
-            ul{
-                display: flex;
-                flex-direction: row;
-                align-items: flex-end;
-                gap: 40px;
-                li{
-                    
-                    
-                    a{
-                        text-decoration: none;
-                        @extend %text-uppercase;
-                        color: $text_color;
-                        font-weight: bold;
-                        letter-spacing: 1.09091px;
-                        // font-family: 'OpenSans';
-                        font-size: 14px;
-                    }
-                    a:hover{
-                        color: $color_primary;
-                    }
-                }
-            }
-        }
+  div {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    img {
+      height: 18px;
     }
-    
+    nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 40px;
+        li {
+          a {
+            text-decoration: none;
+            @extend %text-uppercase;
+            color: $text_color;
+            font-weight: bold;
+            letter-spacing: 1.09091px;
+            // font-family: 'OpenSans';
+            font-size: 14px;
+          }
+          a:hover {
+            color: $color_primary;
+          }
+        }
+      }
+      div.burger {
+        width: 15px;
+        height: 15px;
+        visibility: hidden;
+        display: none;
+        a {
+          display: flex;
+          width: 49px;
+          height: 49px;
+          border-radius: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 7px;
+          .burger-input {
+            @include z-index(999);
+            opacity: 0;
+            cursor: pointer;
+          }
+
+          .burger-input {
+            &:checked ~ span {
+              &.first {
+                position: relative;
+                transform: translate(0, 9px) rotate(-45deg);
+              }
+              &.thecond {
+                transform: scale(0);
+              }
+              &.third {
+                position: relative;
+                transform: translate(0, -9px) rotate(45deg);
+              }
+            }
+          }
+          span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #292d32;
+            transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+            position: relative;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,11 +1,64 @@
-@include mq(laptop) {
-  
+@include mq(desctop) {
 }
-
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+}
 @include mq(tablet) {
-  
+    .test-class{
+        .test{
+            background-color: rgb(117, 128, 0);
+        }
+    }
 }
-
-@include mq(mobile) {
-  
+@include mq(mobile-l) {
+    footer {
+        div {
+    
+            .newsletter,
+            .copyright {
+                
+    
+            }
+    
+            .newsletter {
+                padding: 0 .75rem;
+    
+                h3 {
+                    
+                        font-size: 18px;
+                      
+                }
+    
+                input {
+                    margin-left: 15px;
+    
+                    
+                    width: 120px;
+                    
+                }
+            }
+    
+    
+    
+            .company {
+                p{
+                    width: 310px;
+                }
+    
+            }
+    
+            .copyright {
+                
+            }
+        }
+    }
+}
+@include mq(mobile-s) {
+    .test-class{
+        .test{
+            background-color: red;
+        }
+    }
+    
 }

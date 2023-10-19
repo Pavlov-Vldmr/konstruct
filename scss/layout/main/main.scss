@@ -50,6 +50,8 @@
             gap: 20px;
 
             div {
+                width: 140px;
+                height: 224px;
 
                 span {
                     color: $text_color-light;
@@ -63,7 +65,8 @@
                 }
 
                 img {
-                    width: 140px;
+                    width: 100%;
+                    height: inherit;
                 }
             }
         }

@@ -17,9 +17,8 @@ footer {
             height: 100px;
             display: flex;
 
-            h2 {
+            h3 {
                 height: 40px;
-                font-size: 22px;
             }
 
             input {
@@ -42,6 +41,9 @@ footer {
             height: 240px;
             background-color: $bg-color-dark-blue;
             color: $text_color-light;
+            p{
+                width: 320px;
+            }
 
         }
 

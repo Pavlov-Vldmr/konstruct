@@ -1,11 +1,65 @@
-@include mq(laptop) {
-  
+@include mq(desctop) {
 }
-
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+}
 @include mq(tablet) {
-  
-}
+  header {
+    position: relative;
+    div {
+      img {
+        // margin-left: .75rem;
+      }
+      nav {
+        // position: relative;
+        ul {
+          padding-top: 20px;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          z-index: 999;
+          top: 66px;
+          width: 100%;
+          height: 390px;
+          border-radius: 0px;
+          gap: 20px;
+          height: 500px;
+          background-color: aliceblue;
+          //   background: rgba(63, 63, 63, 0.5);
 
-@include mq(mobile) {
-  
+          transition: all 0.5s ease-in-out;
+          margin: 0;
+          left: 0;
+
+
+          li {
+            a {
+              text-align: right;
+              display: block;
+              width: calc(90vw - 40px);
+              height: 38px;
+              padding-left: 38px;
+              margin-right: 15px;
+            }
+            a:hover {
+              color: $color_primary;
+            }
+          }
+        }
+        ul._hide{
+            visibility: hidden;
+            display: none;
+        }
+        div.burger {
+          visibility: visible;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@include mq(mobile-l) {
+}
+@include mq(mobile-s) {
 }
